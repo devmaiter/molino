@@ -14,141 +14,102 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <a class="btn btn-primary" href="#signup">Sign Up</a>
-            </div>
-        </nav>
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                            <div class="containerImage">
+                                <img src="assets/img/logoMolino.svg" alt="">
+                            </div>
+                            <div class="textcontainer">
+                                <h1 class="text-center">Molino el zaque </h1>
+                                <p class="text-center">En nuestro molino, procesamos el maíz para obtener harina de la mejor calidad. Utilizamos técnicas tradicionales y modernas para asegurar que cada grano de maíz se transforme en una harina fina y nutritiva, ideal para todas tus recetas.</p>
+                                <div class="text-center mt-4">
+                                    <a class="classLink" style="color: #8C322C;" href="#showcase">Nuestros Productos</a>
+                                    <a class="classLink" style="color: #8C322C;" href="#testimonials">Nuestros Clientes</a>
+                                    <a class="classLink" style="color: #8C322C;" href="#signup">Contactenos</a>
                                 </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- Icons Grid-->
-        <section class="features-icons bg-light text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
-                            <h3>Fully Responsive</h3>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
-                            <h3>Bootstrap 5 Ready</h3>
-                            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                            <h3>Easy to Use</h3>
-                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Image Showcases-->
-        <section class="showcase">
+        <section class="showcase" id="showcase">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/granos.jpeg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Fully Responsive Design</h2>
-                        <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                        <h2>Usamos granos seleccionados de la mejor calidad </h2>
+                        <p class="lead mb-0">Tostamos cuidadosamente los granos para hacer nuestra harina de 7 granos. Este proceso realza el sabor y la textura de la harina, asegurando que cada bocado sea delicioso y nutritivo. Hecha de una combinación de maíz, trigo, cebada, avena, arroz, centeno y mijo. Cada uno de estos granos aporta su propio perfil nutricional y sabor, creando una mezcla equilibrada y deliciosa. Utilizamos una combinación de técnicas tradicionales y modernas para garantizar la máxima calidad en cada lote, brindándote una harina llena de sabor y beneficios para tu salud.</p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/tolva.jpeg')"></div>
                     <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Updated For Bootstrap 5</h2>
-                        <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                        <h2>Nuestro Molino </h2>
+                        <p class="lead mb-0">En nuestro molino, utilizamos un molino de piedras tradicional para moler los granos de nuestra harina de 7 granos. Este tipo de molino, compuesto por piedras antiguas, permite una molienda lenta y uniforme que conserva las propiedades y nutrientes de cada grano. Al girar, las piedras ejercen una presión controlada que transforma los granos en harina sin generar el calor intenso de otros métodos modernos, preservando así el sabor auténtico y las cualidades nutricionales. Este proceso artesanal realza la textura y el aroma de la harina, dándole ese toque especial y tradicional que solo un molino de piedras puede ofrecer.</p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/harinaChoholate.jpeg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Easy to Use & Customize</h2>
-                        <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                        <h2>Nuestra Harina de 7 Granos</h2>
+                        <p class="lead mb-0">Después de pasar por nuestro molino de piedras antiguas, la harina se somete a un cuidadoso proceso de cernido. Este paso adicional asegura una textura excepcionalmente fina, eliminando cualquier resto de cáscaras o partes gruesas del grano. Así, logramos una harina de altísima calidad, ideal para una variedad de usos en la cocina.
+
+                            La harina de 7 granos es rica en fibra, vitaminas, y minerales esenciales, lo que la convierte en un ingrediente nutritivo y saludable. Su perfil nutricional ayuda a mejorar la digestión, aporta energía sostenida, y es una excelente fuente de antioxidantes. Además, su textura fina la hace perfecta para incorporarse en recetas tanto dulces como saladas.
+                            
+                            Usos en recetas: Esta harina es ideal para preparar panes multicereales, tortas, y galletas que se caracterizan por su sabor profundo y su suavidad. También se puede usar en batidos y sopas para añadir nutrientes de forma natural o incluso para espesar salsas. La harina de 7 granos aporta un toque artesanal y nutritivo a cualquier preparación, brindando un sabor y una textura incomparables.</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/chocolate.jpg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Nuestro Chocolate de 7 granos </h2>
+                        <p class="lead mb-0">Una vez que obtenemos nuestra harina de 7 granos, la transformamos en un delicioso chocolate en polvo o chucula, una bebida nutritiva y tradicional. El proceso comienza con la mezcla de la harina con cacao de alta calidad y, en algunas recetas, se agregan especias como canela y clavo, que realzan su sabor y aportan propiedades antioxidantes.
+
+                            Después de mezclar los ingredientes, la mezcla se tuesta ligeramente para intensificar los aromas y el sabor de cada componente. Este paso permite que los granos y el cacao se integren perfectamente, dando como resultado un polvo homogéneo con un sabor profundo y delicioso. Finalmente, la chucula se muele nuevamente para asegurar una textura fina y uniforme, ideal para disolverse fácilmente en líquidos.
+                            
+                            Cómo disfrutar la chucula: La chucula es perfecta para preparar una bebida caliente y reconfortante al mezclar el polvo con leche o agua caliente y endulzar al gusto. También se puede usar como ingrediente en batidos, postres, y repostería, aportando un sabor único y tradicional. Además de ser deliciosa, la chucula es nutritiva, ya que combina los beneficios de los siete granos y el cacao, ofreciendo energía, fibra, y antioxidantes en cada taza.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Testimonials-->
-        <section class="testimonials text-center bg-light">
+        <section class="testimonials text-center bg-light" id="testimonials">
             <div class="container">
-                <h2 class="mb-5">What people are saying...</h2>
+                <h2 class="mb-5">Nuestros Clientes</h2>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
-                            <h5>Margaret E.</h5>
-                            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/logoTamales.png" alt="..." />
+                            <h5> Tamales el antojo </h5>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
-                            <h5>Fred S.</h5>
-                            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/images.jpg" alt="..." />
+                            <h5>Lacteos Velmon</h5>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
-                            <h5>Sarah W.</h5>
-                            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/buenGusto.png" alt="..." />
+                            <h5>El buen gusto</h5>
                         </div>
                     </div>
                 </div>
@@ -159,43 +120,17 @@
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
-                    </div>
+                        <div style="width: 100%; height: 400px;">
+                            <h1 class="mb-5"  style="color:black"  >Cómo llegar </h1>
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.4521848712496!2d-73.49332928458289!3d5.321575896186428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4027ff16e4a55d%3A0x3f8ccb8c800a5ff8!2sMolino%20el%20zaque!5e0!3m2!1ses!2sco!4v1699639425248!5m2!1ses!2sco" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>                        
                 </div>
             </div>
         </section>
@@ -205,26 +140,16 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">About</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Contact</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                            <li ><a href="#!".></a>(323)3965628</a></li>
+                            <li ><a href="#!"></a>molinoelzaque@gmail.com</a></li>
                         </ul>
                         <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-facebook fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
-                            </li>
                             <li class="list-inline-item">
                                 <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                                <h1>@molinoelzaque</h1>
                             </li>
                         </ul>
                     </div>

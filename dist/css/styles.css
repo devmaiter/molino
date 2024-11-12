@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Landing Page v6.0.6 (https://startbootstrap.com/theme/landing-page)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
 */
 /*!
@@ -90,7 +90,18 @@
     scroll-behavior: smooth;
   }
 }
+.classLink {
+  font-weight: bold; /* Aplica negrita */
+  margin: 0 15px; /* Agrega espacio horizontal entre los enlaces */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: #8C322C; /* Mantén el color actual (opcional) */
+}
 
+/* Si deseas centrar el texto y aumentar el espacio vertical */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -10840,22 +10851,54 @@ textarea.form-control-lg {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/fondol.jpeg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  height: 610px;
+}
+.containerImage {
+  position: absolute;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%); /* Ajusta -60% para subirlo o bajarlo */
+}
+.textcontainer {
+  position: absolute;
+  top: calc(100% + 102px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Sour Gummy', sans-serif;
+}
+
+.classLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Añade una transición suave */
+}
+
+.classLink:hover {
+  color: #cccccc; /* Cambia el color cuando el cursor está sobre el enlace */
 }
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   opacity: 0.5;
 }
+.showcase-img {
+  background-image: url('assets/img/harinaChoholate.jpeg');
+  background-size: contain;      /* Ajusta la imagen para que ocupe el espacio sin ampliarse */
+  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  background-position: center;   /* Centra la imagen en el contenedor */
+}
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2rem;
 }
@@ -10905,7 +10948,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  background-color: #51585e;
   height: 100%;
   width: 100%;
   top: 0;
